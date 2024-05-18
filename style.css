@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Changed to min-height for responsiveness */
+  background-color: hsl(0, 0%, 95%);
+}
+
+#calculator {
+  font-family: Arial, sans-serif;
+  background-color: hsl(0, 0%, 15%);
+  border-radius: 15px;
+  max-width: 90vw; /* Adjusted max-width for responsiveness */
+  overflow: hidden;
+}
+
+#display {
+  width: 100%;
+  padding: 10px; /* Reduced padding for smaller screens */
+  font-size: 3rem; /* Adjusted font size for smaller screens */
+  text-align: left;
+  border: none;
+  background-color: hsl(0, 0%, 20%);
+  color: white;
+}
+
+#keys {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); /* Responsive grid */
+  gap: 5px; /* Reduced gap for smaller screens */
+  padding: 10px; /* Reduced padding for smaller screens */
+}
+
+button {
+  width: 100%;
+  height: 70px; /* Adjusted button height */
+  border-radius: 50%;
+  border: none;
+  background-color: hsl(0, 0%, 30%);
+  color: white;
+  font-size: 2rem; /* Adjusted font size for smaller screens */
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Additional styles for responsiveness can be added using media queries */
+@media screen and (max-width: 600px) {
+  /* Example media query for smaller screens */
+  #calculator {
+    max-width: 90vw;
+  }
+
+  #display {
+    font-size: 2rem;
+  }
+
+  button {
+    font-size: 1.8rem;
+  }
+}
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+}
+button:active{
+    background-color: hsl(0, 0%, 50%);
+}
+.operator-btn{
+    background-color: hsl(35, 100%, 55%);
+}
+.operator-btn:hover{
+    background-color: hsl(35, 100%, 65%);
+}
+.operator-btn:active{
+    background-color: hsl(35, 100%, 75%);
+}
+.del-btn{
+    background-color: hsl(0, 87%, 34%);
+}
+.del-btn:hover{
+    background-color: hsl(0, 87%, 44%);
+}
+.del-btn:active{
+    background-color: hsl(0, 87%, 54%);
+}
+.extra-btn{
+    background-color: hsl(0, 1%, 67%);
+}
+.extra-btn:hover{
+    background-color: hsl(0, 1%, 77%);
+}
+.extra-btn:active{
+    background-color: hsl(0, 1%, 77%);
+}
